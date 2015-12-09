@@ -109,7 +109,7 @@ void convertToBinaryTime (int currentTime[], int *binaryTime) {
    int minuteSecondDigit = currentTime [3];
    binaryTime [1] = (minuteFirstDigit | minuteSecondDigit);
    
-   int secondFirstDigit = (currentTime [4] << 4);
-   int secondSecondDigit = currentTime [5];
-   binaryTime [2] = (minuteFirstDigit | minuteSecondDigit);
+   int secsFirstDigit = (currentTime [4] << 4);
+   int secsSecondDigit = currentTime [5];
+   binaryTime [2] = (secsFirstDigit | secsSecondDigit);
 }
